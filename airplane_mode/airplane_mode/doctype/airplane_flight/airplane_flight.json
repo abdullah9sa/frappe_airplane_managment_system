@@ -27,7 +27,9 @@
   "is_published",
   "route",
   "column_break_pcxk",
-  "amended_from"
+  "amended_from",
+  "crew_section",
+  "flight_crew_members"
  ],
  "fields": [
   {
@@ -154,6 +156,17 @@
    "fieldname": "gate_number",
    "fieldtype": "Data",
    "label": "Gate Number"
+  },
+  {
+   "fieldname": "crew_section",
+   "fieldtype": "Section Break",
+   "label": "Crew"
+  },
+  {
+   "fieldname": "flight_crew_members",
+   "fieldtype": "Table",
+   "label": "Flight Crew Members",
+   "options": "Flight Crew Members"
   }
  ],
  "has_web_view": 1,
@@ -161,7 +174,7 @@
  "is_published_field": "is_published",
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-19 21:01:09.964097",
+ "modified": "2024-07-19 21:21:42.379011",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",
