@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{name1}-{shop_code}",
+ "creation": "2024-07-19 23:28:29.793305",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "shop_owner",
+  "shop_code",
+  "column_break_trzc",
+  "shop_area",
+  "column_break_lfqk",
+  "depth",
+  "contract_information_section",
+  "rent_amount",
+  "column_break_kebp",
+  "valid_until"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shop Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shop_owner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shop Owner",
+   "options": "Shop Owner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_information_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Information"
+  },
+  {
+   "description": "*Per Month",
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "label": "Rent Amount",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_kebp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "valid_until",
+   "fieldtype": "Date",
+   "label": "Valid Until"
+  },
+  {
+   "fieldname": "column_break_trzc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shop_code",
+   "fieldtype": "Data",
+   "label": "Shop Code"
+  },
+  {
+   "description": "In Meter",
+   "fieldname": "shop_area",
+   "fieldtype": "Float",
+   "label": "Width",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_lfqk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "In Meter",
+   "fieldname": "depth",
+   "fieldtype": "Float",
+   "label": "Depth",
+   "non_negative": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-19 23:35:45.756296",
+ "modified_by": "Administrator",
+ "module": "Airport Shop",
+ "name": "Airport Shop",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
