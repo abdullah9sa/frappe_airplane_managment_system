@@ -1,13 +1,13 @@
 frappe.ui.form.on("Airport Shop", {
     refresh(frm) {
-        // Add Rent Shop button
+        //  Rent Shop button
         if (!frm.doc.__islocal && !frm.doc.is_rented) {
             frm.add_custom_button(__('Rent Shop'), function() {
                 rent_shop(frm);
             }, __('Actions'));
         }
         
-        // Add Clear Rent button
+        //  Clear Rent button
         if (!frm.doc.__islocal && frm.doc.is_rented) {
             frm.add_custom_button(__('Clear Rent'), function() {
                 clear_rent(frm);
