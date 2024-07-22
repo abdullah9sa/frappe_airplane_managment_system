@@ -14,6 +14,7 @@
   "column_break_lfqk",
   "depth",
   "contract_information_section",
+  "is_rented",
   "rent_amount",
   "column_break_kebp",
   "valid_until"
@@ -81,11 +82,17 @@
    "fieldtype": "Float",
    "label": "Depth",
    "non_negative": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_rented",
+   "fieldtype": "Check",
+   "label": "Is Rented"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-19 23:35:45.756296",
+ "modified": "2024-07-22 10:10:55.054362",
  "modified_by": "Administrator",
  "module": "Airport Shop",
  "name": "Airport Shop",

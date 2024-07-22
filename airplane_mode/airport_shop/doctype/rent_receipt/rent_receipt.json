@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RREC-{date}-{receipt_number}",
+ "creation": "2024-07-22 09:49:08.565216",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fzwd",
+  "payment",
+  "shop",
+  "receipt_date",
+  "column_break_lafn",
+  "receipt_number",
+  "payment_method",
+  "issued_by",
+  "section_break_wudp",
+  "amount_paid",
+  "column_break_nktb",
+  "amount_remaining",
+  "section_break_nicc",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fzwd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rent Receipt",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Payment",
+   "options": "Rent Payment",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "payment.shop",
+   "fieldname": "shop",
+   "fieldtype": "Data",
+   "label": "Shop"
+  },
+  {
+   "fieldname": "receipt_date",
+   "fieldtype": "Date",
+   "label": "Receipt Date"
+  },
+  {
+   "fieldname": "issued_by",
+   "fieldtype": "Link",
+   "label": "Issued By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_lafn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "payment.receipt_number",
+   "fieldname": "receipt_number",
+   "fieldtype": "Data",
+   "label": "Receipt Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "amount_paid",
+   "fieldtype": "Currency",
+   "label": "Amount Paid"
+  },
+  {
+   "fetch_from": "payment.payment_method",
+   "fieldname": "payment_method",
+   "fieldtype": "Data",
+   "label": "Payment Method"
+  },
+  {
+   "fieldname": "section_break_nicc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_wudp",
+   "fieldtype": "Section Break",
+   "label": "Payment"
+  },
+  {
+   "fieldname": "column_break_nktb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_remaining",
+   "fieldtype": "Currency",
+   "label": "Amount Remaining"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-22 09:54:43.007387",
+ "modified_by": "Administrator",
+ "module": "Airport Shop",
+ "name": "Rent Receipt",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

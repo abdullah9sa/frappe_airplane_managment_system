@@ -129,6 +129,11 @@ doc_events = {
     }
 }
 
+scheduler_events = {
+    "monthly": [
+        "airplane_mode.airport_shop.utils."
+    ]
+}
 
 # Scheduled Tasks
 # ---------------
