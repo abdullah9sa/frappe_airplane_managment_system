@@ -6,15 +6,17 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "airport",
   "name1",
+  "is_rented",
+  "column_break_trzc",
   "shop_owner",
   "shop_code",
-  "column_break_trzc",
+  "section_break_ucnf",
   "shop_area",
-  "column_break_lfqk",
+  "column_break_kjww",
   "depth",
   "contract_information_section",
-  "is_rented",
   "rent_amount",
   "column_break_kebp",
   "valid_until"
@@ -32,8 +34,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Shop Owner",
-   "options": "Shop Owner",
-   "reqd": 1
+   "options": "Shop Owner"
   },
   {
    "fieldname": "contract_information_section",
@@ -73,10 +74,6 @@
    "non_negative": 1
   },
   {
-   "fieldname": "column_break_lfqk",
-   "fieldtype": "Column Break"
-  },
-  {
    "description": "In Meter",
    "fieldname": "depth",
    "fieldtype": "Float",
@@ -88,11 +85,26 @@
    "fieldname": "is_rented",
    "fieldtype": "Check",
    "label": "Is Rented"
+  },
+  {
+   "fieldname": "airport",
+   "fieldtype": "Link",
+   "label": "Airport",
+   "options": "Airport",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ucnf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_kjww",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-22 10:10:55.054362",
+ "modified": "2024-07-22 21:53:15.122457",
  "modified_by": "Administrator",
  "module": "Airport Shop",
  "name": "Airport Shop",

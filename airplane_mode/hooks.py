@@ -131,7 +131,7 @@ doc_events = {
 
 scheduler_events = {
     "monthly": [
-        "airplane_mode.airport_shop.utils."
+        "airplane_mode.airport_shop.utils.create_monthly_rent_payments"
     ]
 }
 
